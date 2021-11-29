@@ -1,0 +1,15 @@
+<h1>Informations sur voitures</h1>
+
+<button (click)="affiche()">Liste des Ford</button>
+<button (click)="affich()">Liste des Renault</button>
+<button (click)="affi()">Nombre de Clios</button>
+<span *ngIf="test" style="display: block;"> {{lf('Ford')|json}}
+</span>
+<span *ngIf="teste" style="display: block;"> {{lf('Renault')|json}}
+</span>
+<span *ngIf="test1" style="display: block;">Le nombre de Clio est {{nc('Clio')}}
+</span>
+    <p>Donnez le numero de matricule</p>
+<input type="text" name="champ" #textbox/>
+<button (click)="aff()">Chercher</button>
+<span *ngIf="test2" style="display: block;">{{faza(textbox.value)|json}}</span>
